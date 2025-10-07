@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آهن صفری - Ahan Safari</title>
+  <meta name="description" content="آهن صفری - ارزانترین قیمت انواع قوطی، پروفیل، میلگرد، ورق، نبشی و آهن آلات صنعتی و ساختمانی در تهران">
+  <meta name="keywords" content="آهن، میلگرد، نبشی، ورق، قوطی، پروفیل، آهن آلات، تهران، آهن صفری">
+  <style>
+    body {margin:0;font-family:'Arial',sans-serif;direction:rtl;background-color:#f8f8f8;}
+    header{background-color:#1e1e1e;color:#fff;text-align:center;padding:25px 10px;}
+    header h1{margin:0;font-size:2.5em;}
+    nav{display:flex;justify-content:center;background-color:#333;}
+    nav a{color:#fff;padding:15px 25px;text-decoration:none;font-weight:bold;}
+    nav a:hover{background-color:#555;transition:0.3s;}
+    .slider{max-width:1200px;margin:20px auto;position:relative;overflow:hidden;border-radius:10px;}
+    .slides{display:flex;width:300%;transition:transform 0.5s ease-in-out;}
+    .slides img{width:100%;border-radius:10px;}
+    .container{max-width:1200px;margin:auto;padding:20px;}
+    .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-bottom:40px;}
+    .product-card{background-color:#fff;padding:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);text-align:center;transition:transform 0.3s;}
+    .product-card:hover{transform:translateY(-5px);}
+    .product-card img{max-width:100%;border-radius:5px;margin-bottom:10px;}
+    .contact,.address{background-color:#fff;padding:20px;border-radius:8px;margin-bottom:20px;text-align:center;}
+    footer{background-color:#1e1e1e;color:#fff;text-align:center;padding:15px;}
+    .call-btn{display:inline-block;margin-top:10px;padding:10px 20px;background-color:#ffcc00;color:#000;border-radius:5px;text-decoration:none;font-weight:bold;}
+    .call-btn:hover{background-color:#e6b800;transition:0.3s;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>آهن صفری 🏗️</h1>
+  </header>
+
+  <nav>
+    <a href="#products">محصولات</a>
+    <a href="#contact">تماس با ما</a>
+    <a href="#address">آدرس</a>
+  </nav>
+
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://via.placeholder.com/1200x400?text=محصول+آهن+1" alt="محصول 1">
+      <img src="https://via.placeholder.com/1200x400?text=محصول+آهن+2" alt="محصول 2">
+      <img src="https://via.placeholder.com/1200x400?text=محصول+آهن+3" alt="محصول 3">
+    </div>
+  </div>
+
+  <div class="container">
+    <section id="products">
+      <h2>محصولات ما</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=قوطی+و+پروفیل" alt="قوطی و پروفیل">
+          <p>قوطی و پروفیل</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=ورق+و+نبشی" alt="ورق و نبشی">
+          <p>ورق و نبشی</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=تیراهن+و+میلگرد" alt="تیراهن و میلگرد">
+          <p>تیراهن و میلگرد</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=ناودانی+و+تسمه" alt="ناودانی و تسمه">
+          <p>ناودانی و تسمه</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=ورق+شیروانی+و+رنگی" alt="ورق شیروانی و رنگی">
+          <p>ورق شیروانی و رنگی</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x150?text=ورق+گالوانیزه" alt="ورق گالوانیزه">
+          <p>ورق گالوانیزه</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>تماس با ما</h2>
+      <p>تلفن همراه: 09122525982</p>
+      <p>تلفن ثابت: 02146075680 | 02146075609</p>
+      <a href="tel:09122525982" class="call-btn">تماس فوری</a>
+    </section>
+
+    <section id="address" class="address">
+      <h2>آدرس</h2>
+      <p>تهران-شهر قدس-خیابان 30 متری شورا (سی متری پایین) 300 متر پایین تر از شهرداری منطقه 2</p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 آهن صفری - Ahan Safari
+  </footer>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById('slides');
+    const total = slides.children.length;
+    function showSlide() {
+      index++;
+      if (index >= total) index = 0;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+    setInterval(showSlide, 3000);
+  </script>
+
+</body>
+</html>
